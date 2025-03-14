@@ -375,7 +375,7 @@ select{
   padding: 10px;
   border: 0;
   border-radius: 10px;
-  width: 160px;
+  width: 150px;
   background-color: white;
   color: var(--pink);
 }
@@ -10023,9 +10023,10 @@ h6,
 .portfolio-item::after {
   position: absolute;
   content: "";
-  top: 30px;
+  top: 20px;  
   right: 30px;
   bottom: 30px;
+  height: 145px;
   left: 30px;
   border: 2px solid #FFFFFF;
   z-index: 1;

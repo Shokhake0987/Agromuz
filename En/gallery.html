@@ -20,66 +20,68 @@
 
     <!-- Libraries Stylesheet -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href=              "lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="../css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-primary py-3 d-none d-md-block">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-center text-lg-left mb-2 mb-lg-0">
-                    <div class="d-inline-flex align-items-center">
-                        <a class="text-white pr-3" href="faq.html">FAQs</a>
-                        <span class="text-white">|</span>
-                        <a class="text-white px-3" href="emailto:shokhjakhonmukhammadiev@gmail.com">Help</a>
-                        <span class="text-white">|</span>
-                        <a class="text-white pl-3" href="emailto:shokhjakhonmukhammadiev@gmail.com">Support</a>
-                    </div>
+<!-- Topbar Start -->
+<div class="container-fluid bg-primary py-3 d-none d-md-block">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-center text-lg-left mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-white pr-3" href="faq.html">FAQs</a>
+                    <span class="text-white">|</span>
+                    <a class="text-white px-3" href="emailto:shokhjakhonmukhammadiev@gmail.com">Help</a>
+                    <span class="text-white">|</span>
+                    <a class="text-white pl-3" href="emailto:shokhjakhonmukhammadiev@gmail.com">Support</a>
                 </div>
-                <div class="col-md-6 text-center text-lg-right">
-                    <div class="d-inline-flex align-items-center">
-                        <div id="google_translate_element"></div> 
-                    </div>
-                </div>
+            </div>
+            <div class="col-md-6 text-center text-lg-right">
+                <select id="linkSelect" onchange="navigate()">
+                    <option value="gallery.html">English</option>
+                    <option value="../Ru/gallery.html">Russian</option>
+                    <option value="../Uz/gallery.html">Uzbek</option>
+                </select>
             </div>
         </div>
     </div>
-    <!-- Topbar End -->
+</div>
+<!-- Topbar End -->
 
 
-    <!-- Navbar Start -->
-    <div class="container-fluid position-relative nav-bar p-0">
-        <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
-            <nav class="navbar navbar-expand-lg bg-white navbar-light shadow p-lg-0">
-                <a href="../index.html" class="navbar-brand d-block d-lg-none">
-                    <h1 class="m-0 display-4 text-primary">AGROMUZ</h1>
-                </a>
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                    <div class="navbar-nav ml-auto py-0">
-                        <a href="../index.html" class="nav-item nav-link">Home Page</a>
-                        <a href="about.html" class="nav-item nav-link">About Us</a>
-                        <a href="product.html" class="nav-item nav-link">Product</a>
-                    </div>
-                    <a href="index.html" class="navbar-brand mx-5 d-none d-lg-block">
-                        <h1 class="m-0 display-5 text-primary">AGROMUZ</h1>
-                    </a>
-                    <div class="navbar-nav mr-auto py-0">
-                        <a href="service.html" class="nav-item nav-link">Service</a>
-                        <a href="gallery.html" class="nav-item nav-link active">Gallery</a>
-                        <a href="contact.html" class="nav-item nav-link">Contact Us</a>
-                    </div>
+<!-- Navbar Start -->
+<div class="container-fluid position-relative nav-bar p-0">
+    <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
+        <nav class="navbar navbar-expand-lg bg-white navbar-light shadow p-lg-0">
+            <a href="../index.html" class="navbar-brand d-block d-lg-none">
+                <h1 class="m-0 display-4 text-primary"><span class="text-secondary">A</span>GROMUZ</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav ml-auto py-0">
+                    <a href="../index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link active">About</a>
+                    <a href="product.html" class="nav-item nav-link">Product</a>
                 </div>
-            </nav>
-        </div>
+                <a href="../index.html" class="navbar-brand mx-5 d-none d-lg-block">
+                    <h1 class="m-0 display-5 text-primary"><span class="text-secondary">A</span>GROMUZ</h1>
+                </a>
+                <div class="navbar-nav mr-auto py-0">
+                    <a href="service.html" class="nav-item nav-link">Service</a>
+                    <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                </div>
+            </div>
+        </nav>
     </div>
-    <!-- Navbar End -->
+</div>
+<!-- Navbar End -->
 
 
     <!-- Header Start -->
@@ -115,7 +117,7 @@
                 </div>
             </div>
             <div class="row m-0 portfolio-container">
-                <div class="col-lg-4 col-md-6 p-0 portfolio-item first" data-type="chocolate">
+                <div class="col-lg-4 col-md-6 p-1 portfolio-item first" data-type="chocolate">
                     <div class="position-relative overflow-hidden">
                         <img class="img-fluid w-100" src="../img/portfolio-1.jpg" alt="">
                         <a class="portfolio-btn" href="../img/portfolio-1.jpg" data-lightbox="portfolio">
@@ -123,7 +125,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 p-0 portfolio-item second"data-type="vanilla">
+                <div class="col-lg-4 col-md-6 p-1 portfolio-item second"data-type="vanilla">
                     <div class="position-relative overflow-hidden">
                         <img class="img-fluid w-100" src="../img/portfolio-2.jpg" alt="">
                         <a class="portfolio-btn" href="../img/portfolio-2.jpg" data-lightbox="portfolio">
@@ -131,7 +133,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 p-0 portfolio-item third"data-type="cone">
+                <div class="col-lg-4 col-md-6 p-1 portfolio-item third"data-type="cone">
                     <div class="position-relative overflow-hidden">
                         <img class="img-fluid w-100" src="../img/portfolio-3.jpg" alt="">
                         <a class="portfolio-btn" href="../img/portfolio-3.jpg" data-lightbox="portfolio">
@@ -139,7 +141,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 p-0 portfolio-item first"data-type="cone">
+                <div class="col-lg-4 col-md-6 p-1 portfolio-item first"data-type="cone">
                     <div class="position-relative overflow-hidden">
                         <img class="img-fluid w-100" src="../img/portfolio-4.jpg" alt="">
                         <a class="portfolio-btn" href="../img/portfolio-4.jpg" data-lightbox="portfolio">
@@ -147,7 +149,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 p-0 portfolio-item second"data-type="cone">
+                <div class="col-lg-4 col-md-6 p-1 portfolio-item second"data-type="cone">
                     <div class="position-relative overflow-hidden">
                         <img class="img-fluid w-100" src="../img/portfolio-5.jpg" alt="">
                         <a class="portfolio-btn" href="../img/portfolio-5.jpg" data-lightbox="portfolio">
@@ -155,10 +157,98 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 p-0 portfolio-item third"data-type="cone">
+                <div class="col-lg-4 col-md-6 p-1 portfolio-item third"data-type="cone">
                     <div class="position-relative overflow-hidden">
                         <img class="img-fluid w-100" src="../img/portfolio-6.jpg" alt="">
                         <a class="portfolio-btn" href="../img/portfolio-6.jpg" data-lightbox="portfolio">
+                            <i class="fa fa-plus text-primary" style="font-size: 60px;"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 p-1 portfolio-item fourth" data-type="cone">
+                    <div class="position-relative overflow-hidden" >
+                        <img class="img-fluid w-100 " style="height: 179.28px;" src="../img/xrust.jpg" alt="">
+                        <a class="portfolio-btn" href="../img/xrust.jpg" data-lightbox="portfolio">
+                            <i class="fa fa-plus text-primary" style="font-size: 60px;"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 p-1 portfolio-item fourth" data-type="chocolate">
+                    <div class="position-relative overflow-hidden" >
+                        <img class="img-fluid w-100 " style="height: 179.28px;" src="../img/coffee shop.jpg" alt="">
+                        <a class="portfolio-btn" href="../img/coffee shop.jpg" data-lightbox="portfolio">
+                            <i class="fa fa-plus text-primary" style="font-size: 60px;"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 p-1 portfolio-item fourth" data-type="vanilla">
+                    <div class="position-relative overflow-hidden" >
+                        <img class="img-fluid w-100 " style="height: 179.28px;" src="../img/tiger blue.jpg" alt="">
+                        <a class="portfolio-btn" href="../img/tiger blue.jpg" data-lightbox="portfolio">
+                            <i class="fa fa-plus text-primary" style="font-size: 60px;"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 p-1 portfolio-item fourth" data-type="chocolate">
+                    <div class="position-relative overflow-hidden" >
+                        <img class="img-fluid w-100 " style="height: 179.28px;" src="../img/salut.jpg" alt="">
+                        <a class="portfolio-btn" href="../img/salut.jpg" data-lightbox="portfolio">
+                            <i class="fa fa-plus text-primary" style="font-size: 60px;"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 p-1 portfolio-item fourth" data-type="chocolate">
+                    <div class="position-relative overflow-hidden" >
+                        <img class="img-fluid w-100 " style="height: 179.28px;" src="../img/nuts boom mango.jpg" alt="">
+                        <a class="portfolio-btn" href="../img/nuts boom mango.jpg" data-lightbox="portfolio">
+                            <i class="fa fa-plus text-primary" style="font-size: 60px;"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 p-1 portfolio-item fourth" data-type="chocolate">
+                    <div class="position-relative overflow-hidden" >
+                        <img class="img-fluid w-100 " style="height: 179.28px;" src="../img/nuts boom banan.jpg" alt="">
+                        <a class="portfolio-btn" href="../img/nuts boom banan.jpg" data-lightbox="portfolio">
+                            <i class="fa fa-plus text-primary" style="font-size: 60px;"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 p-1 portfolio-item fourth" data-type="vanilla">
+                    <div class="position-relative overflow-hidden" >
+                        <img class="img-fluid w-100 " style="height: 179.28px;" src="../img/tiger yello.jpg" alt="">
+                        <a class="portfolio-btn" href="../img/tiger yello.jpg" data-lightbox="portfolio">
+                            <i class="fa fa-plus text-primary" style="font-size: 60px;"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 p-1 portfolio-item fourth" data-type="chocolate">
+                    <div class="position-relative overflow-hidden"  >
+                        <img class="img-fluid w-100 " style="height: 179.28px;" src="../img/shokolad.jpg" alt="">
+                        <a class="portfolio-btn" href="../img/shokolad.jpg" data-lightbox="portfolio">
+                            <i class="fa fa-plus text-primary" style="font-size: 60px;"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 p-1 portfolio-item fourth" data-type="vanilla">
+                    <div class="position-relative overflow-hidden" >
+                        <img class="img-fluid w-100 " style="height: 179.28px;" src="../img/yagodka.jpg" alt="">
+                        <a class="portfolio-btn" href="../img/yagodka.jpg" data-lightbox="portfolio">
+                            <i class="fa fa-plus text-primary" style="font-size: 60px;"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 p-1 portfolio-item fourth" data-type="vanilla">
+                    <div class="position-relative overflow-hidden" >
+                        <img class="img-fluid w-100 " style="height: 179.28px;" src="../img/slivochni-left.png" alt="">
+                        <a class="portfolio-btn" href="../img/slivochni-left.png.jpg" data-lightbox="portfolio">
+                            <i class="fa fa-plus text-primary" style="font-size: 60px;"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 p-1 portfolio-item fourth" data-type="vanilla">
+                    <div class="position-relative overflow-hidden" >
+                        <img class="img-fluid w-100 " style="height: 179.28px;" src="../img/plombir-left.png" alt="">
+                        <a class="portfolio-btn" href="../img/plombir-left.png" data-lightbox="portfolio">
                             <i class="fa fa-plus text-primary" style="font-size: 60px;"></i>
                         </a>
                     </div>
@@ -169,26 +259,20 @@
     <!-- Portfolio End -->
 
 
-    <!-- Footer Start -->
-    <div class="container-fluid footer bg-light py-5" style="margin-top: 90px;">
+      <!-- Footer Start -->
+      <div class="container-fluid footer bg-light py-5" style="margin-top: 90px;">
         <div class="container text-center py-5">
             <div class="row">
                 <div class="col-12 mb-4">
                     <a href="index.html" class="navbar-brand m-0">
-                        <h1 class="m-0 mt-n2 display-4 text-primary">AGROMUZ</h1>
+                        <h1 class="m-0 mt-n2 display-4 text-primary"><span class="text-secondary">A</span>GROMUZ</h1>
                     </a>
-                </div>
-                <div class="col-12 mb-4">
-                    <a class="btn btn-outline-secondary btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-outline-secondary btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-secondary btn-social mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-outline-secondary btn-social" href="#"><i class="fab fa-instagram"></i></a>
                 </div>
                 <div class="col-12 mt-2 mb-4">
                     <div class="row">
                         <div class="col-sm-6 text-center text-sm-right border-right mb-3 mb-sm-0">
                             <h5 class="font-weight-bold mb-2">Get In Touch</h5>
-                            <p class="mb-2">Samarqand, Samarqand viloyati, Узбекистан</p>
+                            <p class="mb-2">Samarkand, Samarqand Viloyati, Uzbekistan</p>
                             <p class="mb-0">+998 91 541 42 18</p>
                         </div>
                         <div class="col-sm-6 text-center text-sm-left">
@@ -229,18 +313,16 @@
     <script src="../js/main.js"></script>
     <script src="../js/filter.js"></script>
 
-    <!-- Google Translate -->
-    <script src="script.js"></script>
-    <script type="text/javascript">
-      function googleTranslateElementInit() {
-          new google.translate.TranslateElement(
-              {pageLanguage: 'en'},
-              'google_translate_element'
-          );
-      } 
+    <!-- lang selector -->
+    <script>
+        function navigate() {
+            var select = document.getElementById("linkSelect");
+            var filePath = select.value;
+            if (filePath) {
+                window.location.href = filePath;
+            }
+        }
     </script>
-    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
 </body>
 
 </html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agromuz Карта продукта</title>
+    <link rel="icon" href="../img/agromuz logo.png">
+    <link rel="stylesheet" href="../products-css/banan-strawwberry.css">
+    <link rel="stylesheet" href="../css/card.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo-box">
+            <a href="../index.html">
+                <img src="../img/agromuz logo.png" alt="logo">
+            </a>
+        </div>
+        <div class="lang-selector">
+            <select id="linkSelect" onchange="navigate()">
+                <option value="banan-strawwberru.html">Русский</option>
+                <option value="../products-card-en/banan-strawwberru.html">Английский</option>
+                <option value="../products-card-uz/banan-strawwberru.html">Узбекский</option>
+            </select>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="card">
+            <div class="product-preview">
+                <div class="product-img">
+                    <img src="../img/product-1.jpg" alt="" id="product-img">
+                </div>
+            </div>
+            <div class="product-details">
+                <h2>Конус на 3 этажа <small class="badge">NEW</small></h2>
+                <span>Банан, клубника и ванильный конус мороженого</span>
+                <hr>
+                <div class="product-info">
+                    <small>Информация о продукте</small>
+                <ul class="products-description">
+                    <li>
+                        Ингредиенты: масло, сухое молоко, сахар, ваниль, стабилизатор, банан и клубника - эмульгатор.
+                    </li>
+                    <li>
+                        Срок годности: при t = -24 ± 2 ° C, не более 4 месяцев.
+                    </li>
+                    <h4>Пищевая ценность на 100 г:</h4>
+                    <li>
+                        Жиры: 12G
+                    </li>
+                    <li>
+                        Белки: 3,2 г
+                    </li>
+                    <li>
+                        Углеводы: 16 г
+                    </li>
+                    <li>
+                        Значение энергии: 203 ккал
+                    </li>
+                </ul>
+                </div>
+                <hr>
+                <div class="buy-price">
+                    <a href="../En/contact.html">
+                        <button class="priceBtn"><i class="bi bi-cart-fill"></i>Купить сейчас</button>
+                        <span class="price">30.000 UZS</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/card.js"></script>
+     <!-- lang selector -->
+     <script>
+        function navigate() {
+            var select = document.getElementById("linkSelect");
+            var filePath = select.value;
+            if (filePath) {
+                window.location.href = filePath;
+            }
+        }
+    </script>
+</body>
+</html> 

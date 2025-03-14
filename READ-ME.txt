@@ -1,11 +1,11 @@
-  =>  Template Name    : iCREAM - Ice Cream Shop Website Template
+  =>  Template Name    : Agromuz - Ice Cream Shop Website 
 
   =>  Template Link    : https://htmlcodex.com/ice-cream-shop-website-template
 
-  =>  Template License : https://htmlcodex.com/license (or read the LICENSE.txt file)
+  =>  Template License : https://shokhake0987.github.io/portfolio/ (or read the LICENSE.txt file)
 
-  =>  Template Author  : HTML Codex
+  =>  Template Author  : Shokha Dev
 
-  =>  Author Website   : https://htmlcodex.com
+  =>  Author Website   : https://shokhake0987.github.io/portfolio/
 
   =>  About HTML Codex : HTML Codex is one of the top creators and publishers of Free HTML templates, HTML landing pages, HTML email templates and HTML snippets in the world. Read more at ( https://htmlcodex.com/about-us )

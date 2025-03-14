@@ -11,8 +11,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/card.css">
 </head>
 <body>
+    <nav>
+        <div class="logo-box">
+            <a href="../index.html">
+                <img src="../img/agromuz logo.png" alt="logo">
+            </a>
+        </div>
+        <div class="lang-selector">
+            <select id="linkSelect" onchange="navigate()">
+                <option value="salut.html">English</option>
+                <option value="../products-card-ru/salut.html">Russian</option>
+                <option value="../products-card-uz/salut.html">Uzbek</option>
+            </select>
+        </div>
+    </nav>
     <div class="container">
         <div class="card">
             <div class="product-preview">
@@ -60,5 +75,16 @@
         </div>
     </div>
     <script src="../js/card.js"></script>
+
+    <!-- lang selector -->
+    <script>
+        function navigate() {
+            var select = document.getElementById("linkSelect");
+            var filePath = select.value;
+            if (filePath) {
+                window.location.href = filePath;
+            }
+        }
+    </script>
 </body>
 </html>

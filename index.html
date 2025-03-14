@@ -31,9 +31,11 @@
                     </div>
                 </div>
                 <div class="col-md-6 text-center text-lg-right">
-                    <div class="d-inline-flex align-items-center">
-                        <div id="google_translate_element"></div> 
-                    </div>
+                    <select id="linkSelect" onchange="navigate()">
+                        <option value="index.html">English</option>
+                        <option value="indexRu.html">Russian</option>
+                        <option value="indexUz.html">Uzbek</option>
+                    </select>
                 </div>
             </div>
         </div>
@@ -42,19 +44,19 @@
         <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
             <nav class="navbar navbar-expand-lg bg-white navbar-light shadow p-lg-0">
                 <a href="index.html" class="navbar-brand d-block d-lg-none">
-                    <h1 class="m-0 display-4 text-primary">AGROMUZ</h1>
+                    <h1 class="m-0 display-4 text-primary"><span class="text-secondary">A</span>GROMUZ</h1>
                 </a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav ml-auto py-0">
-                        <a href="index.html" class="nav-item nav-link active">Home page</a>
-                        <a href="En/about.html" class="nav-item nav-link">About US</a>
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="En/about.html" class="nav-item nav-link">About</a>
                         <a href="En/product.html" class="nav-item nav-link">Product</a>
                     </div>
                     <a href="index.html" class="navbar-brand mx-5 d-none d-lg-block">
-                        <h1 class="m-0 display-4 text-primary">AGROMUZ</h1>
+                        <h1 class="m-0 display-4 text-primary"><span class="text-secondary">A</span>GROMUZ</h1>
                     </a>
                     <div class="navbar-nav mr-auto py-0">
                         <a href="En/service.html" class="nav-item nav-link">Service</a>
@@ -95,7 +97,7 @@
             <a class="carousel-control-next" href="#header-carousel" data-slide="next">
                 <div class="btn btn-secondary px-0" style="width: 45px; height: 45px;">
                     <span class="carousel-control-next-icon mb-n1"></span>
-                </div>
+                </div>  
             </a>
         </div>
     </div>
@@ -509,19 +511,14 @@
         <div class="row">
             <div class="col-12 mb-4">
                 <a href="index.html" class="navbar-brand m-0">
-                    <h1 class="m-0 mt-n2 display-4 text-primary"><span class="text-secondary"></span>AGROMUZ</h1>
+                    <h1 class="m-0 mt-n2 display-4 text-primary"><span class="text-secondary">A</span>GROMUZ</h1>
                 </a>
-            </div>
-            <div class="col-12 mb-4">
-                <a class="btn btn-outline-secondary btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-outline-secondary btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-outline-secondary btn-social" href="#"><i class="fab fa-instagram"></i></a>
             </div>
             <div class="col-12 mt-2 mb-4">
                 <div class="row">
                     <div class="col-sm-6 text-center text-sm-right border-right mb-3 mb-sm-0">
                         <h5 class="font-weight-bold mb-2">Get In Touch</h5>
-                        <p class="mb-2">Samarqand, Samarqand viloyati, Узбекистан</p>
+                        <p class="mb-2">Uzbekistan, Samarqand, Samarqand viloyati,</p>
                         <p class="mb-0">+998 91 541 42 18</p>
                     </div>
                     <div class="col-sm-6 text-center text-sm-left">
@@ -561,16 +558,17 @@
 <!-- Template Javascript -->
 <script src="js/main.js"></script>
 
-<!-- Google Translate -->
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement(
-                {pageLanguage: 'en'},
-                'google_translate_element'
-            );
-        } 
+<!-- lang selector -->
+    <script>
+        function navigate() {
+            var select = document.getElementById("linelect");
+            var filePath = select.value;
+            if (filePath) {
+                window.location.href = filePath;
+            }
+        }
     </script>
-    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 
 </body>
 

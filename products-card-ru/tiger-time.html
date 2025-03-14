@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agromuz Карта продукта</title>
+    <link rel="icon" href="../img/agromuz logo.png">
+    <link rel="stylesheet" href="../products-css/tiger-time.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="../css/card.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo-box">
+            <a href="../index.html">
+                <img src="../img/agromuz logo.png" alt="logo">
+            </a>
+        </div>
+        <div class="lang-selector">
+            <select id="linkSelect" onchange="navigate()">
+                <option value="tiger-time.html">Русский</option>
+                <option value="../products-card-en/tiger-time.html">Английский</option>
+                <option value="../products-card-uz/tiger-time.html">Узбекский</option>
+            </select>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="card">
+            <div class="product-preview">
+                <div class="product-img">
+                    <img src="../img/tiger yellow.png" alt="" id="product-img">
+                </div>
+            </div>
+            <div class="product-details">
+                <h2>Tiger Time <small class="badge">NEW</small></h2>
+                <span>Ванильный мороженое</span>
+                <hr>
+                <div class="product-info">
+                    <small>Информация о продукте</small>
+                <ul class="products-description">
+                    <li>
+                        Ингредиенты: масло, сухое молоко, сахар, ванильный вкус, стабилизатор-эмульгатор.
+                    </li>
+                    <li>
+                        Срок годности: при t = -24 ± 2 ° C, не более 4 месяцев.
+                    </li>
+                    <h4>Пищевая ценность на 100 г:</h4>
+                    <li>
+                        Жиры: 12G
+                    </li>
+                    <li>    
+                        Белки: 3,1 г
+                    </li>
+                    <li>
+                        Углеводы: 14 г
+                    </li>
+                    <li>
+                        Энергетическая ценность: 198 ккал
+                    </li>
+                </ul>
+                </div>
+                <hr>
+                <div class="buy-price">
+                    <a href="../En/contact.html">
+                        <button class="priceBtn"><i class="bi bi-cart-fill"></i>Buy Now</button>
+                        <span class="price">2.440 UZS</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/card.js"></script>
+    <!-- lang selector -->
+    <script>
+        function navigate() {
+            var select = document.getElementById("linkSelect");
+            var filePath = select.value;
+            if (filePath) {
+                window.location.href = filePath;
+            }
+        }
+    </script>
+</body>
+</html>
